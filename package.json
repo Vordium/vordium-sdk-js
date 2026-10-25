@@ -1,0 +1,55 @@
+{
+  "name": "@vordium/sdk",
+  "version": "0.1.1",
+  "description": "TypeScript and JavaScript SDK for Vordium Chain and the Vordex perpetuals exchange: signing, orders, session keys, agents, TWAP, margin mode and live feeds.",
+  "license": "MIT",
+  "author": "Vordium <dev@vordium.com>",
+  "homepage": "https://docs.vordium.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vordium/vordium-sdk-js.git"
+  },
+  "keywords": [
+    "vordium",
+    "vordex",
+    "perpetuals",
+    "eip-712",
+    "sdk"
+  ],
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

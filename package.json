@@ -1,6 +1,6 @@
 {
   "name": "@vordium/sdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TypeScript and JavaScript SDK for Vordium Chain and the Vordex perpetuals exchange: signing, orders, session keys, agents, TWAP, margin mode and live feeds.",
   "license": "MIT",
   "author": "Vordium <dev@vordium.com>",

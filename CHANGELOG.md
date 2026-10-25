@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2
+- Published by GitHub Actions with npm trusted publishing (no token); provenance attached. No code changes.
+
 ## 0.1.1
 - First public release of `@vordium/sdk` for Node.js 20+ and the browser.
 - `Vordium.connect({ network })` reads the network spec, the node's `/status` and `eth_chainId`, and refuses unless all

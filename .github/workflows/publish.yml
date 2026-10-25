@@ -33,6 +33,6 @@ jobs:
       - run: npm install -g npm@11
       - run: npm ci
       - run: npm run build
-      - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # npm Trusted Publishing: npm logs in with this job's GitHub OIDC token (id-token: write, environment npm).
+      # No npm token is stored anywhere. Provenance is attached automatically (publishConfig.provenance).
+      - run: npm publish --access public
